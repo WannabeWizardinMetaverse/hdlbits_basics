@@ -1,0 +1,15 @@
+Solution:
+
+module top_module( input in, output out );
+	assign out = in;
+endmodule
+
+
+Hint:
+1. This problem introduce the 'continuous assignment' whose example is shown as follow:
+    "assign <port_b>=<port_a>;"
+
+2. 'continuous assignment' means that the <port_b> is the same as <port_a> all the time. 
+    the logic for the assignment is to get the output from the inputs.
+    the <port_b> represents the output and the <port_a> represents the inputs.
+
