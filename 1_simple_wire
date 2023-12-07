@@ -5,7 +5,7 @@ module top_module( input in, output out );
 endmodule
 
 
-Hint:
+Note:
 1. This problem introduce the 'continuous assignment' whose example is shown as follow:
     "assign <port_b>=<port_a>;"
 
