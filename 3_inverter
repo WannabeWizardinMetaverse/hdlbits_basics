@@ -1,0 +1,18 @@
+Solution:
+
+module top_module( input in, output out );
+  assign out = ~in;
+endmodule
+
+Note:
+  There are two operators to realize this function: '~' and '!'
+  the difference between them is that '~' is the inverse per bit and '!' is the inverse on logic. For example:
+  "wire [2:0] in;
+   reg [2:0] out_1;
+   reg out_2;
+   
+   // in the testbench, let "in = 3'b110;"
+   assign out_1 = ~ in;
+   assign out_2 = !in;
+   "
+   Then the 'out_1' should be 3'b001 and 'out_2' should be 1'b0
