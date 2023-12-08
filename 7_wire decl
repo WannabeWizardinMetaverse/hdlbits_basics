@@ -19,7 +19,7 @@ endmodule
 
 Solution 2: 
 NOTE:	this will not be correct according to the requirements of the problem.  
-	But instead of declaring wire, how to realize the same function?
+	But instead of declaring wire, how to realize the same functionality?
 	By stuffing the entire logic. 
 
 `default_nettype none
