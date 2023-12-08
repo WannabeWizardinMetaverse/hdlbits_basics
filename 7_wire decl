@@ -1,4 +1,4 @@
-Solution:
+Solution 1:
 
 `default_nettype none
 module top_module(
@@ -13,6 +13,25 @@ module top_module(
     assign tmp_1 = a& b;
     assign tmp_2 = c& d;
     assign out = tmp_1| tmp_2;
+    assign out_n = ~out;
+    
+endmodule
+
+Solution 2: 
+NOTE:	this will not be correct according to the requirements of the problem.  
+	But instead of declaring wire, how to realize the same function?
+	By stuffing the entire logic. 
+
+`default_nettype none
+module top_module(
+    input a,
+    input b,
+    input c,
+    input d,
+    output out,
+    output out_n   ); 
+	
+    assign out = (a&b)| (c&d);
     assign out_n = ~out;
     
 endmodule
